@@ -90,7 +90,7 @@ class GameState: ObservableObject {
     
     func resetGame() {
         board = GameLogic.createEmptyBoard()
-        currentPlayer = player1
+        currentPlayer = winner ?? currentPlayer
         winner = nil
         isDraw = false
         
